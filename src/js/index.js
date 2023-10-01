@@ -3,7 +3,7 @@
 const botoes = document.querySelectorAll(".botao");
 const personagens = document.querySelectorAll(".personagem");
 
-botoes.forEach((botao) => {
+botoes.forEach(botao, (indice) => {
   botoes.addEventListener("click", () => {
     desselecionarBotao();
     desselecionarPersonagem();
